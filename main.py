@@ -141,7 +141,6 @@ def deadliest_hurricane(hurricanes):
     return (deadliest, max_deaths)
 
 
-# Test the function
 deadliest_name, death_count = deadliest_hurricane(hurricanes)
 print(f"The deadliest hurricane was {deadliest_name}, which caused {death_count} deaths.")
 
@@ -155,7 +154,7 @@ mortality_scale = {
 }
 
 def rate_by_mortality(hurricanes, scale):
-    mortality_dict = {key: [] for key in range(0, 6)}  # include category 5
+    mortality_dict = {key: [] for key in range(0, 6)}  
     
     for hurricane in hurricanes.values():
         deaths = hurricane["Deaths"]
